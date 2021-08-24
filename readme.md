@@ -1,6 +1,6 @@
 ## Description
 
-Traefik blod proxy config
+Traefik blog proxy config
 
 ## Prerequisite
 
