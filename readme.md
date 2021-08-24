@@ -7,7 +7,7 @@ Traefik blog proxy config
 - docker >= 20
 - docker-compose >= 1.25
 
-## Congigration
+## Configration
 
 ```
 entryPoints:
