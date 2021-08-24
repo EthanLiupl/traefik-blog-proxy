@@ -1,0 +1,17 @@
+entryPoints:
+  web:
+    - address:":80"
+  websecure:
+    - address:":443"
+http:
+  routers:
+    lab:
+      service: release-tapnow
+      rule: "Host(`tapnow.localhost`)"
+      entryPoints:
+        - web
+  services:
+    release-tapnow:
+      loadBalancer:
+        servers:
+          - url: "https://release-tapnow.presslogic.com/"
