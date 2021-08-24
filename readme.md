@@ -19,7 +19,7 @@ http:
   routers:
     lab:
       service: release-tapnow
-      rule: "Host(`tapnow.localhost`)"
+      rule: "Host(`tapnow.localhost`)&&Path(`/blog`)"
       entryPoints:
         - web
   services:
